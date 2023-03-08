@@ -12,7 +12,7 @@ const OnBoarding = () => {
     <View style={styles.container}>
     <Image 
       source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png'}}
-      style={{width: 40, height: 33, alignSelf:'center',marginTop: 50}}
+      style={styles.TwitterLogoOnBoarding}
   />
   <View>    
     <Text style={styles.text}>See what’s {'\n'}happening in the {'\n'}world right now. </Text>
@@ -45,7 +45,7 @@ const OnBoarding = () => {
     <View>
       <Button
           buttonStyle={styles.buttonCreate}
-          styleText={styles.loginText}
+          styleText={styles.createAccountText}
           title="Create an account"
           onPress={() => alert('Button pressed')} 
           buttonTextStyle={false}      />

@@ -5,6 +5,18 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignSelf: 'center',
   },
+  TwitterLogo: {
+    width: 60,
+    height: 50,
+    alignSelf: 'center',
+    marginTop: 100
+  },
+  TwitterLogoOnBoarding: {
+    width: 40,
+    height: 33,
+    alignSelf: 'center',
+    marginTop: 50
+  },
   text: {
     marginTop: 90,
     marginLeft: 10,
@@ -16,7 +28,7 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     alignItems: 'center',
     marginTop: 20,
-    paddingHorizontal:40,
+    paddingHorizontal: 40,
     paddingVertical: 5,
     justifyContent: 'center',
     borderRadius: 50,
@@ -31,13 +43,13 @@ export const styles = StyleSheet.create({
   orText: {
     fontSize: 23,
     alignSelf: 'center',
-   
+
   },
   buttonCreate: {
     alignSelf: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
     marginTop: 5,
-    paddingHorizontal:87,
+    paddingHorizontal: 87,
     paddingVertical: 23,
     borderRadius: 50,
     backgroundColor: '#00b9ff',
@@ -80,18 +92,87 @@ export const styles = StyleSheet.create({
     borderRadius: 25,
     backgroundColor: '#00b9ff',
   },
-  loginText: {
+  createAccountText: {
     textAlign: 'center',
     fontWeight: 'bold',
-    fontSize:15,
+    fontSize: 15,
     color: '#FFFFFF',
   },
-  login: {
+  loginText: {
     paddingTop: 10,
     textAlign: 'center',
     fontWeight: 'bold',
-    fontSize:20,
+    fontSize: 20,
     color: '#FFFFFF',
+  },
+  forgetPasswordCointainer: {
+    paddingTop: 15,
+    flexDirection: 'row',
+  },
+  //STYLE FOR NEWS FEED
+  ScrollView: {
+    marginTop: 30,
+    flex: 1,
+
+  },
+  dataContainer: {
+    flexDirection: 'row',
+    paddingRight: 2,
+    paddingTop: 12,
+
+  },
+  profilePictureStyle: {
+    width: 40,
+    height: 40,
+    borderRadius: 40,
+    marginRight: 10,
+  },
+  dataDetails: {
+    marginTop: 10,
+    flex: 1,
+    height: '100%',
+  },
+  dataName: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  dataUserName: {
+    fontSize: 18,
+    color: '#777',
+  },
+  styleName: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  ImageContent: {
+    width: '100%',
+    height: 300,
+    borderRadius: 10,
+  },
+  contentText: {
+    fontSize: 16,
+    paddingBottom: 5,
+  },
+  Interactions: {
+    paddingTop: 8,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  ButtomTabStyle: {
+    marginVertical: 10,
+    height: 50,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  TopBarStyle: {
+    marginVertical: 25,
+    height: 50,
+    flexDirection: 'row',
+
+  },
+  myProfile: {
+    marginRight: 100,
   }
 });
 

@@ -1,25 +1,42 @@
 import React from 'react'
-import { Text, View, Image} from 'react-native';
-import Input from '../../components/Input';
+import { Text, View, Image } from 'react-native';
+import Input from '../../components/InputField';
 import styles from '../../Style';
 import Button from '../../components/Button';
 
 const Login = () => {
   return (
     <View style={styles.loginContainer}>
-    <Image 
-      source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png'}}
-      style={{width: 60, height: 50, alignSelf:'center',marginTop: 100}}
-    />
-    <Text style={styles.logintoTwitterStyle}>Log in to Twitter</Text>
+      <Image
+        source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png' }}
+        style={styles.TwitterLogo}
+      />
+      <Text style={styles.logintoTwitterStyle}>Log in to Twitter</Text>
 
-      <Input/>
-      <Button style={styles.submitButton}
-      title={''}
-       buttonStyle={false} 
-       buttonTextStyle={false} />
+      <Input
+        placeholder={'Username'}
+        onChangeText={function (text: string): void {
+          throw new Error('Function not implemented.');
+        }} />
+      <Input
+        placeholder={'Password'}
+        onChangeText={function (text: string): void {
+          throw new Error('Function not implemented.');
+        }} />
 
-       <Text style={styles. hyperlinkStyle}>Forget Password? Sign up for Twitter</Text>
+      <View>
+        <Button
+          buttonStyle={styles.submitButton}
+          styleText={styles.loginText}
+          title="Log in"
+          onPress={() => alert('Button pressed')}
+          buttonTextStyle={false} />
+      </View>
+      <View style={styles.forgetPasswordCointainer}>
+      <Text style={styles.hyperlinkStyle}>Forget Password?  </Text>
+      <Text style={styles.hyperlinkStyle}>Sign up for Twitter</Text>
+      </View>
+      
     </View>
 
   )
