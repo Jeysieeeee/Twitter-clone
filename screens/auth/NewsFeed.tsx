@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, View, Text, Image, StyleSheet, Touchable, TouchableOpacity } from 'react-native';
+import { ScrollView, View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from '../../Style';
-import TwitterData from '../../data';
+import {TwitterData} from '../../data';
 import { Entypo } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
@@ -12,7 +12,11 @@ import TopBar from '../../components/navigation/TopBar';
 export const NewsFeed = () => {
     return (
         <View style={{ flex: 1, }}>
-             <TopBar/>
+            <TopBar/>
+            <View style={styles.forYou}>
+                <Text style={styles.topBarText}>For you</Text>
+                <Text style={styles.topBarText}>Following</Text>
+            </View>
             <StatusBar style="auto" />
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 {TwitterData.map((listData, index) =>
