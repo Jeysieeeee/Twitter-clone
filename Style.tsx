@@ -172,8 +172,73 @@ export const styles = StyleSheet.create({
 
   },
   myProfile: {
-    marginRight: 100,
-  }
+    marginRight: 130,
+  },
+  forYou: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems:'center',
+  },
+  topBarText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  //STYLE FOR PROFILE
+  myProfilePicture: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    marginLeft:15,
+    marginRight: 10,
+  },
+  profileContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  editProfile: {
+    borderColor:'gray',
+    padding:8,
+    textAlign:'center',
+    borderRadius:15,
+    borderWidth:1,
+    width:100,
+    fontWeight: 'bold',
+  },
+  userInfo: {
+    paddingLeft:15,
+  },
+  userName: {
+    fontWeight: 'bold',
+    fontSize:22,
+  },
+  userCompleteName: {
+    fontSize:14,
+    color:'gray',
+  },
+  userJoined: {
+    flexDirection: 'row',
+    paddingLeft:15,
+  },
+  userFollows: {
+    flexDirection: 'row',
+    paddingLeft:15,
+  },
+  follows: {
+    fontWeight: 'bold',
+  },
+  tweetActions: {
+    flexDirection: 'row',
+    borderBottomWidth:1,
+    borderBottomColor:'#666',
+    paddingTop:25,
+    paddingBottom:20,
+    paddingLeft:15,
+    paddingRight:15,
+    justifyContent: 'space-between',
+  },
+  tweetActionsText:{
+    fontWeight: 'bold',
+  },
 });
 
 export default styles;
