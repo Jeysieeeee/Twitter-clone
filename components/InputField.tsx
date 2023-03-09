@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import { View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { TextInput } from 'react-native'
 import styles from '../Style'
 
-type Props = {
+type InputFieldProps = {
   placeholder: string,
   secureTextEntry?: boolean,
   onChangeText: (text: string) => void,
 }
 
-const InputField = ({ placeholder, secureTextEntry, onChangeText }: Props) => {
+const InputField = ({ placeholder, secureTextEntry, onChangeText }: InputFieldProps) => {
   const [value, setValue] = useState('')
 
   const handleTextChange = (text: string) => {
