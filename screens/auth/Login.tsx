@@ -9,7 +9,7 @@ const Login = () => {
     <View style={styles.loginContainer}>
       <Image
         source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png' }}
-        style={styles.TwitterLogo}
+        style={styles.twitterLogo}
       />
       <Text style={styles.logintoTwitterStyle}>Log in to Twitter</Text>
 

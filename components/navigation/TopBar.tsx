@@ -4,7 +4,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 export const TopBar = () => {
     return (
- <View style={styles.TopBarStyle}>
+ <View style={styles.topBarStyle}>
     <View style={styles.myProfile}>
     <Image source={{ uri: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512'}} 
     style={styles.profilePictureStyle} />

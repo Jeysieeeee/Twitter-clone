@@ -5,7 +5,7 @@ import TwitterData from '../../data';
 import { Entypo } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
-import ButtomTab from '../../components/navigation/ButtomTab';
+import BottomTab from '../../components/navigation/BottomTab';
 import TopBar from '../../components/navigation/TopBar';
 
 
@@ -14,7 +14,7 @@ export const NewsFeed = () => {
         <View style={{ flex: 1, }}>
              <TopBar/>
             <StatusBar style="auto" />
-            <ScrollView showsVerticalScrollIndicator={false} style={styles.ScrollView}>
+            <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 {TwitterData.map((listData, index) =>
                     <View style={{ flexDirection: 'row',  borderColor: '#ccc',paddingBottom:10, borderBottomWidth:1}}>
                 
@@ -39,10 +39,10 @@ export const NewsFeed = () => {
                             <View>
                                 <Text style={styles.contentText}>{listData.content}</Text>
                                 {listData.contentImage &&
-                                <Image source={{ uri: listData.contentImage }} style={styles.ImageContent} />
+                                <Image source={{ uri: listData.contentImage }} style={styles.imageContent} />
                                 }
                             </View>
-                            <View style={styles.Interactions}>
+                            <View style={styles.interactions}>
                                 <TouchableOpacity style={{ flexDirection: 'row' }}>
                                     <EvilIcons name="comment" size={24} color="black" />
                                     <Text>{listData.comment}</Text>
@@ -67,7 +67,7 @@ export const NewsFeed = () => {
                     </View>
                 )}
             </ScrollView>
-            <ButtomTab/>
+            <BottomTab/>
         </View>
     )
 }

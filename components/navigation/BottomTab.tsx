@@ -5,9 +5,9 @@ import { Feather } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import styles from '../../Style';
 
-export const ButtomTab = () => {
+export const BottomTab = () => {
     return (
-<View style={styles.ButtomTabStyle}>
+<View style={styles.bottomTabStyle}>
     <TouchableOpacity>
         <Entypo name="home" size={24} color="black" />
     </TouchableOpacity>
@@ -26,4 +26,4 @@ export const ButtomTab = () => {
 </View>
     )
 }
-export default ButtomTab;
+export default BottomTab;
