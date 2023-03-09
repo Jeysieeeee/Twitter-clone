@@ -5,13 +5,13 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignSelf: 'center',
   },
-  TwitterLogo: {
+  twitterLogo: {
     width: 60,
     height: 50,
     alignSelf: 'center',
     marginTop: 100
   },
-  TwitterLogoOnBoarding: {
+  twitterLogoOnBoarding: {
     width: 40,
     height: 33,
     alignSelf: 'center',
@@ -110,7 +110,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   //STYLE FOR NEWS FEED
-  ScrollView: {
+  scrollView: {
     marginTop: 30,
     flex: 1,
 
@@ -145,7 +145,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  ImageContent: {
+  imageContent: {
     width: '100%',
     height: 300,
     borderRadius: 10,
@@ -154,18 +154,18 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     paddingBottom: 5,
   },
-  Interactions: {
+  interactions: {
     paddingTop: 8,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  ButtomTabStyle: {
+  bottomTabStyle: {
     marginVertical: 10,
     height: 50,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  TopBarStyle: {
+  topBarStyle: {
     marginVertical: 25,
     height: 50,
     flexDirection: 'row',

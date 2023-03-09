@@ -9,18 +9,19 @@ const Login = () => {
     <View style={styles.loginContainer}>
       <Image
         source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png' }}
-        style={styles.TwitterLogo}
+        style={styles.twitterLogo}
       />
       <Text style={styles.logintoTwitterStyle}>Log in to Twitter</Text>
 
       <InputField
         placeholder={'Username'}
-        onChangeText={function (text: string): void {
+        onChangeText={(text)=>
+          {
           throw new Error('Function not implemented.');
         }} />
       <InputField
         placeholder={'Password'}
-        onChangeText={function (text: string): void {
+        onChangeText={(text)=> {
           throw new Error('Function not implemented.');
         }} />
 

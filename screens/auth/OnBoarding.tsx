@@ -12,7 +12,7 @@ const OnBoarding = () => {
     <View style={styles.container}>
     <Image 
       source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png'}}
-      style={styles.TwitterLogoOnBoarding}
+      style={styles.twitterLogoOnBoarding}
   />
   <View>    
     <Text style={styles.text}>See what’s {'\n'}happening in the {'\n'}world right now. </Text>
