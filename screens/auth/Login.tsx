@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Text, View, Image } from 'react-native';
-import Input from '../../components/InputField';
+import InputField from '../../components/InputField';
 import styles from '../../Style';
 import Button from '../../components/Button';
 
@@ -15,13 +15,13 @@ const [password, setPassword] = useState('');
       />
       <Text style={styles.logintoTwitterStyle}>Log in to Twitter</Text>
 
-      <Input
+      <InputField
         placeholder={'Username'}
         value= {userName}
         onChangeText={ (text) => {
           setUserName(text)
         }} />
-      <Input
+      <InputField
         placeholder={'Password'}
         value= {password}
         secureTextEntry
