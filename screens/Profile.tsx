@@ -1,27 +1,54 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, View, Text, Image, TouchableOpacity } from 'react-native';
-import styles from '../../Style';
-import {TwitterData} from '../../data';
-import { Entypo } from '@expo/vector-icons';
+import styles from '../Style';
+import { profileData } from '../data'
 import { EvilIcons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
-import BottomTab from '../../components/navigation/BottomTab';
-import TopBar from '../../components/navigation/TopBar';
+import React from 'react';
 
-
-export const NewsFeed = () => {
+export const Profile = () => {
     return (
-        <View style={{ flex: 1, }}>
-            <TopBar/>
-            <View style={styles.forYou}>
-                <Text style={styles.topBarText}>For you</Text>
-                <Text style={styles.topBarText}>Following</Text>
+        <View style={{ flex: 1}}>
+            <View style={{height:320}}>
+                <Image source={{ uri: 'https://i.pinimg.com/originals/5b/ce/df/5bcedf0159b8568134abcdee481f6c56.jpg' }}
+                    style={{ width: '100%', height: '35%' }} />
+                <View style={styles.profileContainer}>
+                    <Image source={{ uri: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512' }}
+                        style={styles.myProfilePicture} />
+                    <TouchableOpacity style={{ padding: 10, right: 0 }}>
+                        <Text style={styles.editProfile}>Edit profile</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.userInfo}>
+                    <Text style={styles.userName}>ginkarla</Text>
+                    <Text style={styles.userCompleteName}>@JeanGuarra{'\n'}</Text>
+                    <Text>We are born only to die {'\n'}</Text>
+                </View>
+                <View style={styles.userJoined}>
+                    <EvilIcons name="location" size={18} color="black" />
+                    <Text style={styles.userCompleteName}>Daet, Bicol Region </Text>
+                    <AntDesign name="calendar" size={15} color="#666" />
+                    <Text style={styles.userCompleteName}> Joined August 2020 {'\n'}</Text>
+                </View>
+                <View style={styles.userFollows}>
+                    <Text style={styles.follows}>45</Text>
+                    <Text> Following    </Text>
+                    <Text style={styles.follows}>202</Text>
+                    <Text> Followers </Text>
+                </View>
             </View>
-            <StatusBar style="auto" />
-            <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
-                {TwitterData.map((listData, index) =>
-                    <View style={{ flexDirection: 'row',  borderColor: '#ccc',paddingBottom:10, borderBottomWidth:1}}>
-                
+            <View style={styles.tweetActions} >
+                    <Text style={styles.tweetActionsText}>Tweets</Text>
+                    <Text style={styles.tweetActionsText}>Tweets & replies</Text>
+                    <Text style={styles.tweetActionsText}>Media</Text>
+                    <Text style={styles.tweetActionsText}>Likes</Text>
+            </View>
+            <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollViewProfile}>
+                {profileData.map((listData, index) =>
+                    <View style={{ flexDirection: 'row', borderColor: '#ccc', paddingBottom: 30, borderBottomWidth: 1 }}>
+
                         <View key={index} style={styles.dataContainer}>
                             <Image source={{ uri: listData.profilePicture }} style={styles.profilePictureStyle} />
                         </View>
@@ -43,7 +70,7 @@ export const NewsFeed = () => {
                             <View>
                                 <Text style={styles.contentText}>{listData.content}</Text>
                                 {listData.contentImage &&
-                                <Image source={{ uri: listData.contentImage }} style={styles.imageContent} />
+                                    <Image source={{ uri: listData.contentImage }} style={styles.imageContent} />
                                 }
                             </View>
                             <View style={styles.interactions}>
@@ -71,8 +98,10 @@ export const NewsFeed = () => {
                     </View>
                 )}
             </ScrollView>
-            <BottomTab/>
+
         </View>
     )
+
+
 }
-export default NewsFeed;
+export default Profile;
