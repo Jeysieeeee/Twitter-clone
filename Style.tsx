@@ -168,15 +168,19 @@ export const styles = StyleSheet.create({
     marginVertical: 25,
     height: 50,
     flexDirection: 'row',
-
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   myProfile: {
-    marginRight: 130,
+    position: 'absolute',
+    marginLeft: 10,
+    left: 0,
+
   },
   forYou: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    alignItems:'center',
+    alignItems: 'center',
   },
   topBarText: {
     fontSize: 20,
@@ -187,7 +191,7 @@ export const styles = StyleSheet.create({
     width: 80,
     height: 80,
     borderRadius: 40,
-    marginLeft:15,
+    marginLeft: 15,
     marginRight: 10,
   },
   profileContainer: {
@@ -195,51 +199,51 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   editProfile: {
-    borderColor:'gray',
-    padding:8,
-    textAlign:'center',
-    borderRadius:15,
-    borderWidth:1,
-    width:100,
+    borderColor: 'gray',
+    padding: 8,
+    textAlign: 'center',
+    borderRadius: 15,
+    borderWidth: 1,
+    width: 100,
     fontWeight: 'bold',
   },
   userInfo: {
-    paddingLeft:15,
+    paddingLeft: 15,
   },
   userName: {
     fontWeight: 'bold',
-    fontSize:22,
+    fontSize: 22,
   },
   userCompleteName: {
-    fontSize:14,
-    color:'gray',
+    fontSize: 14,
+    color: 'gray',
   },
   userJoined: {
     flexDirection: 'row',
-    paddingLeft:15,
+    paddingLeft: 15,
   },
   userFollows: {
     flexDirection: 'row',
-    paddingLeft:15,
+    paddingLeft: 15,
   },
   follows: {
     fontWeight: 'bold',
   },
   tweetActions: {
     flexDirection: 'row',
-    borderBottomWidth:1,
-    borderBottomColor:'#666',
-    paddingTop:5,
-    paddingBottom:20,
-    paddingLeft:15,
-    paddingRight:15,
+    borderBottomWidth: 1,
+    borderBottomColor: '#666',
+    paddingTop: 5,
+    paddingBottom: 20,
+    paddingLeft: 15,
+    paddingRight: 15,
     justifyContent: 'space-between',
   },
-  tweetActionsText:{
+  tweetActionsText: {
     fontWeight: 'bold',
   },
   scrollViewProfile: {
-    paddingHorizontal:10,
+    paddingHorizontal: 10,
     flex: 1,
 
   },
