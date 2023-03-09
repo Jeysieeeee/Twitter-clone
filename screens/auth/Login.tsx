@@ -15,12 +15,12 @@ const Login = () => {
 
       <Input
         placeholder={'Username'}
-        onChangeText={function (text: string): void {
+        onChangeText={ (text) => {
           throw new Error('Function not implemented.');
         }} />
       <Input
         placeholder={'Password'}
-        onChangeText={function (text: string): void {
+        onChangeText={(text) => {
           throw new Error('Function not implemented.');
         }} />
 
