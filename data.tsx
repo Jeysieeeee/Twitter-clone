@@ -1,4 +1,4 @@
-import { Entypo } from '@expo/vector-icons';
+
 interface TwitterDataProps {
   name: string;
   userName: string;
@@ -10,16 +10,29 @@ interface TwitterDataProps {
   retweet: number;
   likes: number;
   views: number;
+};
+interface ProfileDataProps {
+  name: string;
+  userName: string;
+  profilePicture: string;
+  time: string;
+  content?: string;
+  contentImage?: string;
+  comment: number;
+  retweet: number;
+  likes: number;
+  views: number;
+
 }
 
-const TwitterData: TwitterDataProps[] = [
+export const TwitterData: TwitterDataProps[] = [
   {
     name: 'David Licauco',
     userName: ' @davidlicauco',
     profilePicture: 'https://pbs.twimg.com/profile_images/1387248456826187778/geuWEvFX.jpg',
     time: '2h',
     content: 'Wish you were here',
-    contentImage:'https://img.rawpixel.com/private/static/images/website/2022-05/sk9791-image-kwvuja96.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=13500e5125cd13300ba36ed88517f83e',
+    contentImage: 'https://img.rawpixel.com/private/static/images/website/2022-05/sk9791-image-kwvuja96.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=13500e5125cd13300ba36ed88517f83e',
     comment: 899,
     retweet: 2958,
     likes: 28200,
@@ -42,7 +55,7 @@ const TwitterData: TwitterDataProps[] = [
     profilePicture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-jCiadHUipe4Eu8uIqn6BdMnIE5JzU4XR_Q&usqp=CAU',
     time: '12h',
     content: 'Happy March!',
-    contentImage:'https://tricks.nayag.com/wp-content/uploads/2023/02/Freen-Sarocha-Birthday.jpg',
+    contentImage: 'https://tricks.nayag.com/wp-content/uploads/2023/02/Freen-Sarocha-Birthday.jpg',
     comment: 10000,
     retweet: 2908,
     likes: 3900,
@@ -59,6 +72,75 @@ const TwitterData: TwitterDataProps[] = [
     likes: 175,
     views: 23,
   },
-  
+
+];
+export const profileData: ProfileDataProps[] = [
+  {
+    name: 'ginkarla',
+    userName: '@JeanGuarra',
+    profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
+    time: '2m',
+    content: `I wonder how those alleys of dead falling leaves made my eyes go hazel nuts--literally!` ,
+    comment: 3,
+    retweet: 78,
+    likes: 13,
+    views: 90,
+  },
+  {
+    name: 'ginkarla',
+    userName: '@JeanGuarra',
+    profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
+    time: '2m',
+    content: `I spent almost the whole time not with a good book but with writing` ,
+    comment: 50,
+    retweet: 90,
+    likes: 458,
+    views: 900,
+  },
+  {
+    name: 'ginkarla',
+    userName: '@JeanGuarra',
+    profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
+    time: '5h',
+    content: `I finally grip off my pen and let my inner goddess go across dimensions I've never gone.` ,
+    comment: 4,
+    retweet: 82,
+    likes: 175,
+    views: 23,
+  },
+  {
+    name: 'ginkarla',
+    userName: '@JeanGuarra',
+    profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
+    time: '8h',
+    content: `may we never lose ourselves again in 2023` ,
+    comment: 104,
+    retweet: 17000,
+    likes: 44,
+    views: 100600,
+  },
+  {
+    name: 'ginkarla',
+    userName: '@JeanGuarra',
+    profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
+    time: '8h',
+    contentImage: 'https://www.inspisuccess.com/wp-content/uploads/2018/12/Write-your-sad-times-in-sand-Write-your-good-times-in-stone-700x700.png',
+    comment: 104,
+    retweet: 17000,
+    likes: 44,
+    views: 100600,
+  },
+  {
+    name: 'ginkarla',
+    userName: '@JeanGuarra',
+    profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
+    time: '07 Jan 2023',
+    content: `As much as I wanted to write, I want to be written` ,
+    contentImage: 'https://i.pinimg.com/550x/50/93/5a/50935abc7d7388dbe2171bd5f0e589b4.jpg',
+    comment: 104,
+    retweet: 17000,
+    likes: 44,
+    views: 100600,
+  },
+
 ]
-export default TwitterData;

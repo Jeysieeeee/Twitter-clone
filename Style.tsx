@@ -111,7 +111,6 @@ export const styles = StyleSheet.create({
   },
   //STYLE FOR NEWS FEED
   scrollView: {
-    marginTop: 30,
     flex: 1,
 
   },
@@ -230,7 +229,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     borderBottomWidth:1,
     borderBottomColor:'#666',
-    paddingTop:25,
+    paddingTop:5,
     paddingBottom:20,
     paddingLeft:15,
     paddingRight:15,
@@ -238,6 +237,11 @@ export const styles = StyleSheet.create({
   },
   tweetActionsText:{
     fontWeight: 'bold',
+  },
+  scrollViewProfile: {
+    paddingHorizontal:10,
+    flex: 1,
+
   },
 });
 
