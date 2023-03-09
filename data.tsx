@@ -142,5 +142,16 @@ export const profileData: ProfileDataProps[] = [
     likes: 44,
     views: 100600,
   },
-
+  {
+    name: 'mikaella',
+    userName: '@MikaJarapa',
+    profilePicture: 'https://avatars.githubusercontent.com/u/76169868?v=4',
+    time: '09 March 2023',
+    content: `Happy Birthday Kuya Edwin!!!` ,
+    contentImage: 'https://media.licdn.com/dms/image/C5603AQHJZoUAiJvGzw/profile-displayphoto-shrink_800_800/0/1645710197796?e=2147483647&v=beta&t=dY-OItGQxe1DtYyQdfK-A5_yhBAu8p7lN231hwA_F4w',
+    comment: 1,
+    retweet: 2,
+    likes: 0,
+    views: 100,
+  },
 ]
