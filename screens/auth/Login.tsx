@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Text, View, Image } from 'react-native';
 import Input from '../../components/InputField';
 import styles from '../../Style';
 import Button from '../../components/Button';
 
 const Login = () => {
+const [userName, setUserName] = useState('');
+const [password, setPassword] = useState('');
   return (
     <View style={styles.loginContainer}>
       <Image
@@ -15,13 +17,16 @@ const Login = () => {
 
       <Input
         placeholder={'Username'}
+        value= {userName}
         onChangeText={ (text) => {
-          throw new Error('Function not implemented.');
+          setUserName(text)
         }} />
       <Input
         placeholder={'Password'}
+        value= {password}
+        secureTextEntry
         onChangeText={(text) => {
-          throw new Error('Function not implemented.');
+          setPassword(text)
         }} />
 
       <View>

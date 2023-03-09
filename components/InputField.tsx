@@ -5,16 +5,11 @@ import styles from '../Style'
 type InputFieldProps = {
   placeholder: string,
   secureTextEntry?: boolean,
+  value: string,
   onChangeText: (text: string) => void,
 }
 
-const InputField = ({ placeholder, secureTextEntry, onChangeText }: InputFieldProps) => {
-  const [value, setValue] = useState('')
-
-  const handleTextChange = (text: string) => {
-    setValue(text)
-    onChangeText(text)
-  }
+const InputField = ({ placeholder, secureTextEntry, value, onChangeText }: InputFieldProps) => {
 
   return (
     <TextInput
@@ -22,7 +17,7 @@ const InputField = ({ placeholder, secureTextEntry, onChangeText }: InputFieldPr
       placeholder={placeholder}
       value={value}
       secureTextEntry={secureTextEntry}
-      onChangeText={handleTextChange}
+      onChangeText={(text)=>onChangeText(text)}
     />
   )
 }
