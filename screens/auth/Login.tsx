@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View, Image } from 'react-native';
-import Input from '../../components/InputField';
+import InputField from '../../components/InputField';
 import styles from '../../Style';
 import Button from '../../components/Button';
 
@@ -13,12 +13,12 @@ const Login = () => {
       />
       <Text style={styles.logintoTwitterStyle}>Log in to Twitter</Text>
 
-      <Input
+      <InputField
         placeholder={'Username'}
         onChangeText={function (text: string): void {
           throw new Error('Function not implemented.');
         }} />
-      <Input
+      <InputField
         placeholder={'Password'}
         onChangeText={function (text: string): void {
           throw new Error('Function not implemented.');
