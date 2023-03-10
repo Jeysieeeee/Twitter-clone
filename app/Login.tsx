@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { Text, View, Image } from 'react-native';
-import InputField from '../../components/InputField';
-import styles from '../../Style';
-import Button from '../../components/Button';
+import InputField from '../components/InputField';
+import styles from '../Style';
+import Button from '../components/Button';
+import {useRouter} from 'expo-router';
 
 const Login = () => {
 const [userName, setUserName] = useState('');
 const [password, setPassword] = useState('');
+const router=useRouter()
   return (
     <View style={styles.loginContainer}>
       <Image
@@ -34,7 +36,7 @@ const [password, setPassword] = useState('');
           buttonStyle={styles.submitButton}
           styleText={styles.loginText}
           title="Log in"
-          onPress={() => alert('Button pressed')}
+          onPress={() => router.push('/tabs/')}
           buttonTextStyle={false} />
       </View>
       <View style={styles.forgetPasswordCointainer}>

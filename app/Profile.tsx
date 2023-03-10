@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { ScrollView, View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from '../Style';
 import { profileData } from '../data'
@@ -7,13 +6,16 @@ import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import React from 'react';
+import {useRouter} from 'expo-router';
 
 export const Profile = () => {
+    const router = useRouter()
     return (
         <View style={{ flex: 1}}>
             <View style={{height:320}}>
                 <Image source={{ uri: 'https://i.pinimg.com/originals/5b/ce/df/5bcedf0159b8568134abcdee481f6c56.jpg' }}
-                    style={{ width: '100%', height: '35%' }} />
+                    style={{ width: '100%', height: '35%' }}
+                    />
                 <View style={styles.profileContainer}>
                     <Image source={{ uri: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512' }}
                         style={styles.myProfilePicture} />
@@ -47,7 +49,7 @@ export const Profile = () => {
             </View>
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollViewProfile}>
                 {profileData.map((listData, index) =>
-                    <View style={{ flexDirection: 'row', borderColor: '#ccc', paddingBottom: 30, borderBottomWidth: 1 }}>
+                    <View style={styles.profileFeedContainer}>
 
                         <View key={index} style={styles.dataContainer}>
                             <Image source={{ uri: listData.profilePicture }} style={styles.profilePictureStyle} />

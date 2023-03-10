@@ -1,18 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from '../../Style';
-import {TwitterData} from '../../data';
+import { TwitterData } from '../../data';
 import { Entypo } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
-import BottomTab from '../../components/navigation/BottomTab';
 import TopBar from '../../components/navigation/TopBar';
 
 
 export const NewsFeed = () => {
     return (
         <View style={{ flex: 1, }}>
-            <TopBar/>
+            <TopBar />
             <View style={styles.forYou}>
                 <Text style={styles.topBarText}>For you</Text>
                 <Text style={styles.topBarText}>Following</Text>
@@ -20,8 +19,7 @@ export const NewsFeed = () => {
             <StatusBar style="auto" />
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 {TwitterData.map((listData, index) =>
-                    <View style={{ flexDirection: 'row',  borderColor: '#ccc',paddingBottom:10, borderBottomWidth:1}}>
-                
+                    <View style= {styles.FeedContainer} >
                         <View key={index} style={styles.dataContainer}>
                             <Image source={{ uri: listData.profilePicture }} style={styles.profilePictureStyle} />
                         </View>
@@ -43,7 +41,7 @@ export const NewsFeed = () => {
                             <View>
                                 <Text style={styles.contentText}>{listData.content}</Text>
                                 {listData.contentImage &&
-                                <Image source={{ uri: listData.contentImage }} style={styles.imageContent} />
+                                    <Image source={{ uri: listData.contentImage }} style={styles.imageContent} />
                                 }
                             </View>
                             <View style={styles.interactions}>
@@ -71,7 +69,6 @@ export const NewsFeed = () => {
                     </View>
                 )}
             </ScrollView>
-            <BottomTab/>
         </View>
     )
 }
