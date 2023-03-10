@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image, Linking, TouchableOpacity } from 'react-native';
+import { Text, View, Image, Linking} from 'react-native';
 import styles from '../Style';
 import Button from '../components/Button'
 import GoogleIcon from '../icon/GoogleIcon';
@@ -27,7 +27,7 @@ const OnBoarding = () => {
           <Button
             buttonStyle={styles.button}
             buttonTextStyle={styles.buttonText}
-            icon={<GoogleIcon width={48} height={48} />}
+            icon={<GoogleIcon width={30} height={30} />}
             title="Continue with Google"
             onPress={() => alert('Button pressed')}
           />
@@ -38,7 +38,7 @@ const OnBoarding = () => {
             buttonStyle={styles.button}
             buttonTextStyle={styles.buttonText}
             title="Continue with Apple"
-            icon={<AppleIcon width={40} height={40} />}
+            icon={<AppleIcon width={20} height={20} />}
             onPress={() => alert('Button pressed')}
           />
         </View>
