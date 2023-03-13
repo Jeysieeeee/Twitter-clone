@@ -9,8 +9,8 @@ interface GoogleProps {
 const GoogleIcon = ({width,height} :GoogleProps) => (
   <Svg
     viewBox="0 0 48 48"
-    width={25}
-    height={25}
+    width={width}
+    height={height}
   >
     <Path
       fill="#FFC107"

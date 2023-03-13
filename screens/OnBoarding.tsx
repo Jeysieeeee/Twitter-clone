@@ -38,7 +38,7 @@ const OnBoarding = () => {
             buttonStyle={styles.button}
             buttonTextStyle={styles.buttonText}
             title="Continue with Apple"
-            icon={<AppleIcon width={20} height={20} />}
+            icon={<AppleIcon size={30} color={'black'} />}
             onPress={() => alert('Button pressed')}
           />
         </View>
