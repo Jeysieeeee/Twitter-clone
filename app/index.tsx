@@ -1,13 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
 import OnBoarding from "../screens/OnBoarding";
 
-export default function Page() {
+const Page =() =>{
   return (
     <View style={styles.container}>
       <OnBoarding/>
     </View>
   );
 }
+
+export default Page;
 
 const styles = StyleSheet.create({
   container: {
