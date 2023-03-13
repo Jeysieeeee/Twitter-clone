@@ -62,7 +62,6 @@ export const styles = StyleSheet.create({
     marginLeft: 0,
   },
   loginTextContainer: {
-    // marginTop: 130,
     alignSelf: 'center',
     flexDirection: 'row',
   },
@@ -81,7 +80,7 @@ export const styles = StyleSheet.create({
     width: 300,
     height: 50,
     borderRadius: 25,
-    backgroundColor: 'lightgray',
+    backgroundColor: '#E5E4E2',
   },
   submitButton: {
     alignItems: 'center',
