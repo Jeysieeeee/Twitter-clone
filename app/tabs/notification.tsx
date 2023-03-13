@@ -1,11 +1,11 @@
 import { Text } from "react-native";
 
-export const notification = () =>
+export const Notification = () =>
 {
 return(
     <Text>
-       notification
+       Notification
     </Text>
 )
 }
-export default notification;
+export default Notification;

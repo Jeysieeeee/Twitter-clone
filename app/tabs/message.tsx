@@ -1,6 +1,6 @@
 import { Text } from "react-native";
 
-export const message = () =>
+export const Message = () =>
 {
 return(
     <Text>
@@ -8,4 +8,4 @@ return(
     </Text>
 )
 }
-export default message;
+export default Message;

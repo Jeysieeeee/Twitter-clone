@@ -1,11 +1,11 @@
 import { Text } from "react-native";
 
-export const record = () =>
+export const Record = () =>
 {
 return(
     <Text>
-        record
+        Record
     </Text>
 )
 }
-export default record;
+export default Record;
