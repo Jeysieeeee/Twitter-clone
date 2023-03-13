@@ -19,8 +19,9 @@ export const NewsFeed = () => {
             <StatusBar style="auto" />
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 {TwitterData.map((listData, index) =>
-                    <View style= {styles.FeedContainer} >
-                        <View key={index} style={styles.dataContainer}>
+                    <View key={index}
+                        style={styles.FeedContainer} >
+                        <View style={styles.dataContainer}>
                             <Image source={{ uri: listData.profilePicture }} style={styles.profilePictureStyle} />
                         </View>
                         <View style={styles.dataDetails}>
