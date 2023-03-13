@@ -1,24 +1,22 @@
 import React from 'react';
-import { Text, View, Image, Linking} from 'react-native';
+import { Text, View, Linking } from 'react-native';
 import styles from '../Style';
 import Button from '../components/Button'
 import GoogleIcon from '../icon/GoogleIcon';
 import AppleIcon from '../icon/AppleIcon';
 import { useRouter, Link } from 'expo-router';
+import TwitterIcon from '../icon/TwitterIcon';
 
 const OnBoarding = () => {
   const router = useRouter()
   return (
 
     <View style={styles.container}>
-      <View style={{flex:1,}}>
-        <Image
-          source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png' }}
-          style={styles.twitterLogoOnBoarding}
-        />
+      <View>
+        <TwitterIcon width={48} height={48} style={styles.twitterLogoOnBoarding}/>
       </View>
 
-      <View style={{flex:5, justifyContent: 'center'}}>
+      <View style={{ flex: 5, justifyContent: 'center' }}>
         <View>
           <Text style={styles.text}>See what’s {'\n'}happening in the {'\n'}world right now. </Text>
         </View>
@@ -78,7 +76,7 @@ const OnBoarding = () => {
         </View>
       </View>
 
-      <View style={{ flex: .5, ...styles.loginTextContainer}}>
+      <View style={{ flex: .5, ...styles.loginTextContainer }}>
         <Text> Already have an account? </Text>
         <Link href={'/Login'} ><Text style={{ color: 'blue' }}>Log in</Text></Link>
       </View>

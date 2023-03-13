@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router"
-import { RouterIcon } from "../../components/navigation/RouterIcon";
+import { RouterIcon } from "../../navigation/RouterIcon";
 
 const AppLayout = () => {
     return (
@@ -17,10 +17,10 @@ const AppLayout = () => {
                 })}
             >
                 <Tabs.Screen name="NewsFeed" options={{ title: 'News Feed' }} />
-                <Tabs.Screen name="search" options={{ title: "Search" }} />
-                <Tabs.Screen name="record" options={{ title: "Record" }} />
-                <Tabs.Screen name="notification" options={{ title: "Notification" }} />
-                <Tabs.Screen name="message" options={{ title: "Message" }} />
+                <Tabs.Screen name="Search" options={{ title: "Search" }} />
+                <Tabs.Screen name="Record" options={{ title: "Record" }} />
+                <Tabs.Screen name="Notification" options={{ title: "Notification" }} />
+                <Tabs.Screen name="Message" options={{ title: "Message" }} />
             </Tabs>
         </>
     );

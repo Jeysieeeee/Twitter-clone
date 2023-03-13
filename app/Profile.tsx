@@ -1,6 +1,6 @@
 import { ScrollView, View, Text, Image, TouchableOpacity, Dimensions, } from 'react-native';
 import styles from '../Style';
-import { profileData } from '../data'
+import { profileData } from '../components/data'
 import { EvilIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';

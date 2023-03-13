@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from '../../Style';
-import { TwitterData } from '../../data';
+import { TwitterData } from '../../components/data';
 import { Entypo } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
-import TopBar from '../../components/navigation/TopBar';
+import TopBar from '../../navigation/TopBar';
 
 
 export const NewsFeed = () => {

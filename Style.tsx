@@ -162,7 +162,8 @@ export const styles = StyleSheet.create({
   interactions: {
     paddingTop: 8,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+   justifyContent:'space-between'
+
   },
   bottomTabStyle: {
     marginVertical: 10,
