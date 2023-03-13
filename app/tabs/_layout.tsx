@@ -1,8 +1,7 @@
 import { View } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router"
-import { RouterIcon } from "../../components/navigation/RouterIcon";
-import styles from "../../Style";
+import { RouterIcon } from "../../navigation/RouterIcon";
 
 const AppLayout = () => {
     return (

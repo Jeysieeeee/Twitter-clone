@@ -3,6 +3,7 @@ import { Text, View, Image } from 'react-native';
 import InputField from '../components/InputField';
 import styles from '../Style';
 import Button from '../components/Button';
+import TwitterIcon from '../icon/TwitterIcon';
 import {useRouter} from 'expo-router';
 
 const Login = () => {
@@ -11,9 +12,10 @@ const [password, setPassword] = useState('');
 const router=useRouter()
   return (
     <View style={styles.loginContainer}>
-      <Image
-        source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png' }}
-        style={styles.twitterLogo}
+      <TwitterIcon 
+      style = {styles.twitterLogo }
+      width={48} 
+      height={48}
       />
       <Text style={styles.logintoTwitterStyle}>Log in to Twitter</Text>
 

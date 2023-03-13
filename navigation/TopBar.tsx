@@ -1,5 +1,5 @@
 import { View, TouchableOpacity, Image } from 'react-native';
-import styles from '../../Style';
+import styles from '../Style';
 import { AntDesign } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 

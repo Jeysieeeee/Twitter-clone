@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styles from "../../Style";
 import InputField from '../../components/InputField';
 import { AntDesign } from '@expo/vector-icons';
-import { searchTrend } from '../../data'
+import { searchTrend } from '../../components/data'
 
 
 export const Search = () => {
