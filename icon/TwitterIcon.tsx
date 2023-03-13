@@ -5,8 +5,6 @@ interface  TwitterIconProps {
     width:number;
     height: number;
     style:any;
-
-
 }
 export const TwitterIcon = ({width, height, style}: TwitterIconProps) => {
     return (<Svg width={width} height={height} style={style} >
