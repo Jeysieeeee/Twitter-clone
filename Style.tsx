@@ -15,10 +15,9 @@ export const styles = StyleSheet.create({
     width: 40,
     height: 33,
     alignSelf: 'center',
-    marginTop: 50
+    marginTop: 50,
   },
   text: {
-    marginTop: 90,
     marginLeft: 10,
     fontSize: 30,
     color: 'black',
@@ -29,7 +28,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 20,
     paddingHorizontal: 40,
-    paddingVertical: 5,
+    paddingVertical: 13,
     justifyContent: 'center',
     borderRadius: 50,
     borderWidth: 1,
@@ -49,7 +48,7 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     justifyContent: 'center',
     marginTop: 5,
-    paddingHorizontal: 87,
+    paddingHorizontal: 88,
     paddingVertical: 23,
     borderRadius: 50,
     backgroundColor: '#00b9ff',
@@ -63,7 +62,6 @@ export const styles = StyleSheet.create({
     marginLeft: 0,
   },
   loginTextContainer: {
-    marginTop: 130,
     alignSelf: 'center',
     flexDirection: 'row',
   },
@@ -82,7 +80,7 @@ export const styles = StyleSheet.create({
     width: 300,
     height: 50,
     borderRadius: 25,
-    backgroundColor: 'lightgray',
+    backgroundColor: '#E5E4E2',
   },
   submitButton: {
     alignItems: 'center',
@@ -114,10 +112,17 @@ export const styles = StyleSheet.create({
     flex: 1,
 
   },
+  FeedContainer: {
+    flexDirection: 'row',
+    borderColor: '#ccc',
+    paddingBottom: 10,
+    borderBottomWidth: 1,
+    paddingHorizontal: 1,
+  },
   dataContainer: {
     flexDirection: 'row',
-    paddingRight: 2,
-    paddingTop: 12,
+    paddingHorizontal: 10,
+    paddingTop: 10,
 
   },
   profilePictureStyle: {
@@ -127,8 +132,9 @@ export const styles = StyleSheet.create({
     marginRight: 10,
   },
   dataDetails: {
-    marginTop: 10,
+    marginTop: 5,
     flex: 1,
+    marginRight: 17,
     height: '100%',
   },
   dataName: {
@@ -165,7 +171,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   topBarStyle: {
-    marginVertical: 25,
+    marginTop: 16,
     height: 50,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -181,9 +187,13 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    borderTopWidth: 0.3,
+    borderColor: 'gray',
+    borderBottomWidth: 0.3,
+    paddingVertical: 12,
   },
   topBarText: {
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: 'bold',
   },
   //STYLE FOR PROFILE
@@ -231,9 +241,9 @@ export const styles = StyleSheet.create({
   },
   tweetActions: {
     flexDirection: 'row',
-    borderBottomWidth: 1,
-    borderBottomColor: '#666',
-    paddingTop: 5,
+    borderBottomWidth: 0.3,
+    borderBottomColor: 'gray',
+    paddingTop: 16,
     paddingBottom: 20,
     paddingLeft: 15,
     paddingRight: 15,
@@ -243,9 +253,32 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   scrollViewProfile: {
-    paddingHorizontal: 10,
     flex: 1,
 
+  },
+  profileFeedContainer: {
+    flexDirection: 'row',
+    borderColor: '#ccc',
+    paddingBottom: 30,
+    borderBottomWidth: 1,
+
+  },
+  searchBar: {
+    flex: 0.10,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 10
+  },
+  searchBarProfile: {
+    marginTop: 20,
+    width: 40,
+    height: 40,
+    borderRadius: 40,
+    marginRight: 10,
+  },
+  searchDataContainer: {
+    padding: 10,
   },
 });
 

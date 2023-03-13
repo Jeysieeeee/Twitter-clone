@@ -23,6 +23,11 @@ interface ProfileDataProps {
   likes: number;
   views: number;
 
+};
+interface SearchTrendProps {
+  trend: string;
+  title: string;
+  countOfTweet: string;
 }
 
 export const TwitterData: TwitterDataProps[] = [
@@ -72,6 +77,18 @@ export const TwitterData: TwitterDataProps[] = [
     likes: 175,
     views: 23,
   },
+  {
+    name: 'mikaella',
+    userName: '@MikaJarapa',
+    profilePicture: 'https://avatars.githubusercontent.com/u/76169868?v=4',
+    time: '09 March 2023',
+    content: `Happy Birthday Kuya Edwin!!!`,
+    contentImage: 'https://media.licdn.com/dms/image/C5603AQHJZoUAiJvGzw/profile-displayphoto-shrink_800_800/0/1645710197796?e=2147483647&v=beta&t=dY-OItGQxe1DtYyQdfK-A5_yhBAu8p7lN231hwA_F4w',
+    comment: 1,
+    retweet: 2,
+    likes: 0,
+    views: 100,
+  },
 
 ];
 export const profileData: ProfileDataProps[] = [
@@ -80,7 +97,7 @@ export const profileData: ProfileDataProps[] = [
     userName: '@JeanGuarra',
     profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
     time: '2m',
-    content: `I wonder how those alleys of dead falling leaves made my eyes go hazel nuts--literally!` ,
+    content: `I wonder how those alleys of dead falling leaves made my eyes go hazel nuts--literally!`,
     comment: 3,
     retweet: 78,
     likes: 13,
@@ -91,7 +108,7 @@ export const profileData: ProfileDataProps[] = [
     userName: '@JeanGuarra',
     profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
     time: '2m',
-    content: `I spent almost the whole time not with a good book but with writing` ,
+    content: `I spent almost the whole time not with a good book but with writing`,
     comment: 50,
     retweet: 90,
     likes: 458,
@@ -102,7 +119,7 @@ export const profileData: ProfileDataProps[] = [
     userName: '@JeanGuarra',
     profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
     time: '5h',
-    content: `I finally grip off my pen and let my inner goddess go across dimensions I've never gone.` ,
+    content: `I finally grip off my pen and let my inner goddess go across dimensions I've never gone.`,
     comment: 4,
     retweet: 82,
     likes: 175,
@@ -113,7 +130,7 @@ export const profileData: ProfileDataProps[] = [
     userName: '@JeanGuarra',
     profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
     time: '8h',
-    content: `may we never lose ourselves again in 2023` ,
+    content: `may we never lose ourselves again in 2023`,
     comment: 104,
     retweet: 17000,
     likes: 44,
@@ -135,23 +152,39 @@ export const profileData: ProfileDataProps[] = [
     userName: '@JeanGuarra',
     profilePicture: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512',
     time: '07 Jan 2023',
-    content: `As much as I wanted to write, I want to be written` ,
+    content: `As much as I wanted to write, I want to be written`,
     contentImage: 'https://i.pinimg.com/550x/50/93/5a/50935abc7d7388dbe2171bd5f0e589b4.jpg',
     comment: 104,
     retweet: 17000,
     likes: 44,
     views: 100600,
   },
+
+];
+export const searchTrend: SearchTrendProps[] = [
   {
-    name: 'mikaella',
-    userName: '@MikaJarapa',
-    profilePicture: 'https://avatars.githubusercontent.com/u/76169868?v=4',
-    time: '09 March 2023',
-    content: `Happy Birthday Kuya Edwin!!!` ,
-    contentImage: 'https://media.licdn.com/dms/image/C5603AQHJZoUAiJvGzw/profile-displayphoto-shrink_800_800/0/1645710197796?e=2147483647&v=beta&t=dY-OItGQxe1DtYyQdfK-A5_yhBAu8p7lN231hwA_F4w',
-    comment: 1,
-    retweet: 2,
-    likes: 0,
-    views: 100,
+    trend: `Trending`,
+    title: `#beckfrenn`,
+    countOfTweet: `1m Tweets`,
   },
+  {
+    trend: `Trending`,
+    title: `President Marcos`,
+    countOfTweet: `100k Tweets`,
+  },
+  {
+    trend: `Trending in Philippines`,
+    title: `NASA TAMANG FANDOM AKO`,
+    countOfTweet: `15.9k Tweets`,
+  },
+  {
+    trend: `Celebrities· Trending`,
+    title: `#KissesDelavin`,
+    countOfTweet: `32k Tweets`,
+  },
+  {
+    trend: `Celebrities in Philippines`,
+    title: `Robi`,
+    countOfTweet: `10k Tweets`,
+  }
 ]
