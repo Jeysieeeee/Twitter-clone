@@ -203,10 +203,13 @@ export const styles = StyleSheet.create({
     borderRadius: 40,
     marginLeft: 15,
     marginRight: 10,
+    borderWidth: 3,
+    borderColor: 'white'
   },
   profileContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    backgroundColor: 'green',
   },
   editProfile: {
     borderColor: 'gray',
@@ -255,6 +258,13 @@ export const styles = StyleSheet.create({
   scrollViewProfile: {
     flex: 1,
 
+  },
+  arrowBack: {
+    position: 'absolute',
+    top: 25,
+    left: 20,
+    borderRadius: 25,
+    backgroundColor: '#A9A9A9',
   },
   profileFeedContainer: {
     flexDirection: 'row',
