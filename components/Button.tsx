@@ -1,30 +1,27 @@
 import React from 'react'
 import { Text, StyleProp, TextStyle, View, TouchableOpacity } from 'react-native';
+import { styled } from "nativewind";
 
 interface Buttonprops {
   title: string;
   onPress?: any;
-  style?: StyleProp<TextStyle> | undefined;
+  style?: StyleProp<TextStyle>;
   icon?: any;
-  styleText?: StyleProp<TextStyle> | undefined;
-  buttonStyle: StyleProp<TextStyle> | undefined;
-  buttonTextStyle: StyleProp<TextStyle> | undefined;
 }
 
-const Button = ({ title, onPress, icon, styleText, buttonStyle, buttonTextStyle}: Buttonprops) => {
+const Button = ({ title, onPress, icon, style}: Buttonprops) => {
   return (
     <TouchableOpacity 
-    style={buttonStyle} 
+    style={style} 
     onPress={onPress} >
-      {icon ? <View style={{ flexDirection: 'row', alignItems: 'center'}}>
+      {icon ? <View className='flex flex-row self-center'>
         {icon}
-        <Text style={buttonTextStyle}>{title}</Text>
+        <Text className='text-xl font-bold'>{title}</Text>
       </View>
-      : <Text style={styleText}>{title}</Text>
+      : <Text className='text-xl font-bold self-center'>{title}</Text>
     }
-      
     </TouchableOpacity>
   );
 };
 
-export default Button;
+export default styled (Button)

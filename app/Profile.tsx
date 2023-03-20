@@ -13,6 +13,8 @@ export const Profile = () => {
     const router = useRouter()
     return (
         <View style={{ flex: 1 }}>
+           
+            <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollViewProfile}>
             <View style={{ height: Dimensions.get('window').height * .5 }}>
                 <View style={{ flex: 1, position: 'relative' }}>
                     <Image source={{ uri: 'https://i.pinimg.com/originals/5b/ce/df/5bcedf0159b8568134abcdee481f6c56.jpg' }}
@@ -54,7 +56,6 @@ export const Profile = () => {
                     <Text style={styles.tweetActionsText}>Likes</Text>
                 </View>
             </View>
-            <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollViewProfile}>
                 {profileData.map((listData, index) => <View style={styles.profileFeedContainer}
                     key={index}>
                     <View style={styles.dataContainer}>

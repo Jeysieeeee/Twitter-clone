@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
-import { TextInput } from 'react-native'
-import styles from '../Style'
+import React from 'react'
+import { TextInput, StyleProp, TextStyle} from 'react-native'
+import { styled } from "nativewind";
+
 
 type InputFieldProps = {
   placeholder: string,
   secureTextEntry?: boolean,
+  style?: StyleProp<TextStyle>;
   value: string,
   onChangeText: (text: string) => void,
+
 }
 
 const InputField = ({ placeholder, secureTextEntry, value, onChangeText }: InputFieldProps) => {
 
   return (
     <TextInput
-      style={styles.input}
+     className='mt-5 border-b-2 self-center border-b-gray-300 w-9/12 align-text-top pb-3'
       placeholder={placeholder}
       value={value}
       secureTextEntry={secureTextEntry}
@@ -22,4 +25,4 @@ const InputField = ({ placeholder, secureTextEntry, value, onChangeText }: Input
   )
 }
 
-export default InputField
+export default styled (InputField)

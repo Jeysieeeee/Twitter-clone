@@ -1,51 +1,54 @@
 import React, { useState } from 'react'
-import { Text, View, Image } from 'react-native';
+import { Text, TouchableOpacity, View, } from 'react-native';
+import { useRouter } from 'expo-router';
 import InputField from '../components/InputField';
-import styles from '../Style';
 import Button from '../components/Button';
 import TwitterIcon from '../icon/TwitterIcon';
-import {useRouter} from 'expo-router';
+
+
 
 const Login = () => {
-const [userName, setUserName] = useState('');
-const [password, setPassword] = useState('');
-const router=useRouter()
+  const [userName, setUserName] = useState('');
+  const [password, setPassword] = useState('');
+  const router = useRouter()
   return (
-    <View style={styles.loginContainer}>
-      <TwitterIcon 
-      style = {styles.twitterLogo }
-      width={48} 
-      height={48}
+    <View className='self-center w-full h-full flex-auto pt-40'>
+      <TwitterIcon
+        className='self-center'
+        width={48}
+        height={48}
       />
-      <Text style={styles.logintoTwitterStyle}>Log in to Twitter</Text>
-
-      <InputField
-        placeholder={'Username'}
-        value= {userName}
-        onChangeText={ (text) => {
-          setUserName(text)
-        }} />
-      <InputField
-        placeholder={'Password'}
-        value= {password}
-        secureTextEntry
-        onChangeText={(text) => {
-          setPassword(text)
-        }} />
-
+      <Text className=' text-3xl pt-10 self-center font-semibold'>Log in to Twitter</Text>
       <View>
+        <InputField
+          placeholder={'Phone, email or username'}
+          value={userName}
+          onChangeText={(text) => {
+            setUserName(text)
+          }} />
+        <InputField
+          placeholder={'Password'}
+          value={password}
+          secureTextEntry
+          onChangeText={(text) => {
+            setPassword(text)
+          }} />
+      </View>
+      <View className='pt-5'>
         <Button
-          buttonStyle={styles.submitButton}
-          styleText={styles.loginText}
+          className='rounded-full p-4 self-center bg-blue w-9/12'
           title="Log in"
-          onPress={() => router.push('/tabs/')}
-          buttonTextStyle={false} />
+          onPress={() => router.push('/tabs/NewsFeed')}
+        />
       </View>
-      <View style={styles.forgetPasswordCointainer}>
-      <Text style={styles.hyperlinkStyle}>Forget Password?  </Text>
-      <Text style={styles.hyperlinkStyle}>Sign up for Twitter</Text>
+      <View className='pt-10 flex-row pl-10'>
+        <TouchableOpacity>
+          <Text className=' text-blue'>Forget Password?  </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text className='text-blue'>Sign up for Twitter</Text>
+        </TouchableOpacity>
       </View>
-      
     </View>
 
   )

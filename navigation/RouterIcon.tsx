@@ -1,7 +1,4 @@
-import { MaterialIcons } from '@expo/vector-icons';
-import { Entypo } from '@expo/vector-icons';
-import { Feather } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialIcons, Entypo, Feather, Ionicons} from '@expo/vector-icons';
 
 export const RouterIcon = ({color, name}) =>{
     if (name === 'NewsFeed') 
