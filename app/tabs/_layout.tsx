@@ -6,7 +6,7 @@ import { RouterIcon } from "../../navigation/RouterIcon";
 const AppLayout = () => {
     return (
         <>
-            <View style={{ marginTop: 30,}} />
+            <View style={{ marginTop: 30}} />
             <Tabs
                 backBehavior="history"
                 screenOptions={({ route }) => ({
