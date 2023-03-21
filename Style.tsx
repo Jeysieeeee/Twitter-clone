@@ -179,7 +179,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   myProfile: {
-    //position: 'absolute',
     marginLeft: 10,
     left: 0,
 
