@@ -44,8 +44,8 @@ export const TwitterData: TwitterDataProps[] = [
     views: 100200
   },
   {
-    name: 'Luna',
-    userName: 'solunayaa',
+    name: 'Luna ',
+    userName: '@solunayaa',
     profilePicture: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbcbJ3B-_iDiQCpTQvXOVWDjUgBgCnlIkwnNF7d-aM2m6mrn6b',
     time: '5m',
     content: `Happy women's dayyy (ps. naloka ako sa hashtags ng twt hahshshshshss)`,

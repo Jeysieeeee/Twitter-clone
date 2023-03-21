@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
   input: {
     paddingLeft: 16,
     marginTop: 20,
-    width: 300,
+    width: 500,
     height: 50,
     borderRadius: 25,
     backgroundColor: '#E5E4E2',
@@ -179,7 +179,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   myProfile: {
-    position: 'absolute',
     marginLeft: 10,
     left: 0,
 
@@ -190,12 +189,15 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     borderTopWidth: 0.3,
     borderColor: 'gray',
+    backgroundColor:'white',
     borderBottomWidth: 0.3,
     paddingVertical: 12,
+  
   },
   topBarText: {
     fontSize: 16,
     fontWeight: 'bold',
+
   },
   //STYLE FOR PROFILE
   myProfilePicture: {

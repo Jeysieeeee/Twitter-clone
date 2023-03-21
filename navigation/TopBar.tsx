@@ -6,11 +6,11 @@ import { useRouter } from 'expo-router';
 export const TopBar = () => {
     const router = useRouter()
     return (
-        <View style={styles.topBarStyle}>
-            <View style={styles.myProfile}>
+        <View className='flex space-x-28 flex-row p-3 border-b-2 border-gray-300'>
+            <View>
                 <TouchableOpacity onPress={() => router.push('/Profile/')}>
                     <Image source={{ uri: 'https://ca.slack-edge.com/T01J5LD19ML-U04QPUPK4SV-0f1d231bbb5d-512' }}
-                        style={styles.profilePictureStyle}
+                        className=' w-12 h-12 rounded-full '
                     />
                 </TouchableOpacity>
             </View>
