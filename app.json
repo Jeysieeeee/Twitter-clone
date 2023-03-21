@@ -3,13 +3,13 @@
     "name": "myTwitter",
     "slug": "myTwitter",
     "version": "1.0.0",
-    "scheme": "mytwitter",
+    "scheme": "myTwitter",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "rAesizeMode": "contain",
+      "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
